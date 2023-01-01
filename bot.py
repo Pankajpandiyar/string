@@ -10,9 +10,9 @@ logging.basicConfig(
 
 app = Client(
     "bot",
-    api_id= '13335517',
-    api_hash='76b6a02d5f039628ac07e72108638c1a',
-    bot_token='5595502681:AAELGEqT_FRlAENqRX2s_RjtZ_Zw7kQu0iY',
+    api_id=env.API_ID,
+    api_hash=env.API_HASH,
+    bot_token=env.BOT_TOKEN,
     in_memory=True,
     plugins=dict(root="StringSessionBot"),
 )
